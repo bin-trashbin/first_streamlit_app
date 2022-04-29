@@ -1,7 +1,5 @@
 import streamlit
+import pandas
 
-streamlit.title('🍌🥭 I lived at Michigan')
-
-streamlit.header('I lived at Oakland County🍌🥭 ')
-
-streamlit.text('I lived at Rochester Hills')
+my_fruit_list= pandas.read.csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.dataframe(my_fruit_list)

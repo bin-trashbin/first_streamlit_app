@@ -53,4 +53,4 @@ second_fruit_choice = streamlit.text_input('What 2nd fruit would you like inform
 streamlit.write('The user entered', second_fruit_choice)
 
 #this will not work correctly, but just go with it for now
-my.cur.execute("insert into fruit_load_list values ('from streamlit')")
+my_cur.execute("insert into fruit_load_list values ('from streamlit')")

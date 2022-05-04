@@ -83,7 +83,7 @@ second_fruit_choice = streamlit.text_input('What 2nd fruit would you like inform
 
 streamlit.write('The user entered', second_fruit_choice)
 
-streamlit.stop()
+#streamlit.stop()
 
 def insert_row_snowflake(new_fruit):
                     with my_cnx.Cursor() as my_cur:

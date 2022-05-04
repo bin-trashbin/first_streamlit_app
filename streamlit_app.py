@@ -60,7 +60,7 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 
-streamlit.stop()
+
 
 streamlit.header("The fruit load list contains:")
 
@@ -82,6 +82,8 @@ if streamlit.button('get Fruit Load List'):
 second_fruit_choice = streamlit.text_input('What 2nd fruit would you like information about?', 'jackfruit')
 
 streamlit.write('The user entered', second_fruit_choice)
+
+streamlit.stop()
 
 def insert_row_snowflake(new_fruit):
                     with my_cnx.Cursor() as my_cur:
